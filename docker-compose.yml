@@ -1,0 +1,47 @@
+version: '3.1'
+
+services:
+  server:
+    build: 
+      context: ./application
+    container_name: oishi-webserver
+    restart: always
+    ports:
+      - 82:80
+    volumes:
+      - ./application/source:/var/www/html
+    env_file:
+      - ./docker.env
+    networks:
+      - oishi
+
+  database:
+    image: mariadb:latest
+    container_name: oishi-database
+    restart: always
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d/
+      - oishi_data:/var/lib/mysql
+    env_file:
+      - ./docker.env
+    networks:
+      - oishi
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: oishi-phpmyadmin
+    restart: always
+    ports:
+      - 8081:80
+    env_file:
+      - ./docker.env
+    depends_on:
+      - database
+    networks:
+      - oishi
+
+networks:
+  oishi:
+
+volumes:
+  oishi_data:

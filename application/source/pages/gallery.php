@@ -18,12 +18,12 @@
   <body>
 
     <!-- @note Navbar -->
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
           <div class="container">
             
              <!--  Show this only on mobile to medium screens  -->
-             <a href="https://john4e656f.github.io/Amaterasu/" class="navbar-brand  d-lg-none justify-content-center">
-              <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/logo-lg-white.png?raw=true" alt="Oishii ramen shop" width="200px" height="200px">
+             <a href="../index.php" class="navbar-brand  d-lg-none justify-content-center">
+              <img src="../assets/logo-lg-white.png" alt="Oishii ramen shop" width="200px" height="200px">
             </a>
               
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -32,101 +32,104 @@
 
             <!--  Use flexbox utility classes to change how the child elements are justified  -->
             <div class="collapse navbar-collapse justify-content-center" id="navmenu">
-              <ul class="navbar-nav p-lg-5 ps-5">
-                  <li class="nav-item">
-                    <a href="https://john4e656f.github.io/restaurant-css-framework/" class="nav-link active"><h5>Home</h5></a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="https://john4e656f.github.io/restaurant-css-framework/pages/menu.html" class="nav-link"><h5>Menu</h5></a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="https://john4e656f.github.io/restaurant-css-framework/pages/location.html" class="nav-link"><h5>Location</h5></a>
-                  </li>
-                </ul>
+                <ul class="navbar-nav p-lg-5 ps-5">
+                    <li class="nav-item">
+                      <a href="../index.php" class="nav-link active"><h5>Home</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./menu.php" class="nav-link"><h5>Menu</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./location.php" class="nav-link"><h5>Location</h5></a>
+                    </li>
+                  </ul>
 
-                    <!--   Show this only lg screens and up   -->
-                    <a class="navbar-brand d-none d-lg-block " href="https://john4e656f.github.io/Amaterasu/">
-                      <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/logo-lg-white.png?raw=true" alt="Oishii ramen shop" width="200px" height="200px">
-                    </a>
-          
-                <ul class="navbar-nav ps-5 ps-lg-0">
-                  <li class="nav-item">
-                      <a href="https://john4e656f.github.io/restaurant-css-framework/pages/gallery.html" class="nav-link"><h5>Gallery</h5></a>
+                      <!--   Show this only lg screens and up   -->
+                  <a class="navbar-brand d-none d-lg-block " href="../index.php">
+                    <img src="../assets/logo-lg-white.png" alt="Oishii ramen shop" width="200px" height="200px">
+                  </a>
+            
+                  <ul class="navbar-nav ps-5 ps-lg-0">
+                    <li class="nav-item">
+                        <a href="./gallery.php" class="nav-link"><h5>Gallery</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.php" class="nav-link"><h5>About Us</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.php" class="nav-link"><h5>Contact Us</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./eview.php" class="nav-link"><h5>Review</h5></a>
                   </li>
-                  <li class="nav-item">
-                      <a href="https://john4e656f.github.io/restaurant-css-framework/pages/about.html" class="nav-link"><h5>About Us</h5></a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="https://john4e656f.github.io/restaurant-css-framework/pages/contact.html" class="nav-link active"><h5>Contact Us</h5></a>
-                  </li>
-                </ul>
-            </div>
+                  </ul>
+              </div>
         </div>
       </nav>
+      
 
-      <!-- @note Contact Form -->
-      <form>
-        <div class="container md-4">
-          <div class="row gap-2 justify-content-center my-5">
-            <div class="col-lg-10 mx-auto col-12 text-center mb-3">
-              <h1 class="mt-0 text-dark">CONTACT US</h1>
-              <p class="lead">GET IN CONTACT WITH OUR TEAM BY COMPLETING THE FORM BELOW, OR CONTACT US AT <a href="mailto:info@oishiiramen.com" alt="oishii ramen contact email"> INFO@OISHIIRAMEN.COM </a>!</p>
-            </div>
 
-            <div class="container w-75">
-              <div class="row justify-content-center my-5">
-                <div class="col-md-5 col-12">
-                  <div class="form-floating form-outline form-white mb-4">
-                    <input type="First-name" id="floatingFirstName" class="form-control" placeholder="First Name"/>
-                    <label for="floatingFirstName">First Name</label>
-                  </div>
-                </div>
-                <div class="col-md-5 col-12">
-                  <div class="form-floating form-outline form-white mb-4">
-                    <input type="Last-name" id="floatingLastName" class="form-control" placeholder="Last Name"/>
-                    <label for="floatingLastName">Last Name</label>
-                  </div>
-                </div>
+      <h2 class="text-center my-5">Gallery</h2>
+
+      <div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="8000">
+            <div class="row">
+              <div class="col-lg-4">
+                <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/2.jpeg?raw=true" class="d-block w-100" height="600px" alt="...">
               </div>
-
-              <div class="row justify-content-center">
-                <div class="col-md-5 col-12">
-                  <div class="form-floating form-outline form-white mb-4">
-                    <input type="Email" id="floatingInput" class="form-control" placeholder="Email address"/>
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                </div>
-                <div class="col-md-5 col-12">
-                  <div class="form-floating">
-                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                      <option selected>Reservation</option>
-                      <option value="1">Allergies</option>
-                      <option value="2">Questions</option>
-                      <option value="3">Problems</option>
-                    </select>
-                    <label for="floatingSelect">Subjects</label>
-                  </div>
-                </div>
+              <div class="col-lg-4 ">
+                <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/3.jpeg?raw=true" class="d-lg-block d-none w-100" height="600px" alt="...">
               </div>
-
-              <div class="row justify-content-center my-5">
-                <div class="col-md-10 col-12">
-                  <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Message</label>
-                  </div>
+              <div class="col-lg-4">
+                <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/4.jpeg?raw=true" class="d-lg-block d-none w-100" height="600px" alt="...">
               </div>
-
-            <div class="text-center text-md-left my-5">
-              <a class="btn btn-danger" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
           </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <div class="row">
+              <div class="col-lg-4">
+                <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/P1030446-2.jpg?raw=true" class="d-block w-100" height="600px" alt="...">
+              </div>
+              <div class="col-lg-4">
+                <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/food1.jpeg?raw=true" class="d-lg-block d-none w-100" height="600px" alt="...">
+              </div>
+              <div class="col-lg-4">
+                <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/image-asset.jpeg?raw=true" class="d-lg-block d-none w-100" height="600px" alt="...">
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="8000">
+            <div class="row">
+              <div class="col-lg-4">
+                <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/jfc_5.jpg?raw=true" class="d-block w-100" height="600px" alt="...">
+              </div>
+              <div class="col-lg-4">
+                <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/P1040340+%5B16x9%5D.jpg?raw=true" class="d-lg-block d-none w-100" height="600px" alt="...">
+              </div>
+              <div class="col-lg-4">
+                <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/Ramen1.jpeg?raw=true" class="d-lg-block d-none w-100" height="600px" alt="...">
+              </div>
             </div>
           </div>
         </div>
-      </form>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
-      <!-- @note Footer -->
+
+              <!-- @note Footer -->
       <footer class="bg-dark text-center text-white">
         <!-- Grid container -->
         <div class="container p-4">
@@ -176,7 +179,7 @@
                 <!--Grid column-->
                 <div class="col-auto">
                   <!-- Submit button -->
-                  <button type="submit" class="btn btn-outline-light btn-danger mb-4">
+                  <button type="submit" class="btn btn-outline-light mb-4">
                     Subscribe
                   </button>
                 </div>

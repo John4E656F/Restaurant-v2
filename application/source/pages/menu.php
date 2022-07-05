@@ -18,12 +18,12 @@
   <body>
 
     <!-- @note Navbar -->
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
           <div class="container">
             
              <!--  Show this only on mobile to medium screens  -->
-             <a href="https://john4e656f.github.io/Amaterasu/" class="navbar-brand  d-lg-none justify-content-center">
-              <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/logo-lg-white.png?raw=true" alt="Oishii ramen shop" width="200px" height="200px">
+             <a href="../index.php" class="navbar-brand  d-lg-none justify-content-center">
+              <img src="../assets/logo-lg-white.png" alt="Oishii ramen shop" width="200px" height="200px">
             </a>
               
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -32,35 +32,38 @@
 
             <!--  Use flexbox utility classes to change how the child elements are justified  -->
             <div class="collapse navbar-collapse justify-content-center" id="navmenu">
-              <ul class="navbar-nav p-lg-5 ps-5">
-                  <li class="nav-item">
-                    <a href="https://john4e656f.github.io/restaurant-css-framework/" class="nav-link "><h5>Home</h5></a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="https://john4e656f.github.io/restaurant-css-framework/pages/menu.html" class="nav-link active"><h5>Menu</h5></a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="https://john4e656f.github.io/restaurant-css-framework/pages/location.html" class="nav-link"><h5>Location</h5></a>
-                  </li>
-                </ul>
+                <ul class="navbar-nav p-lg-5 ps-5">
+                    <li class="nav-item">
+                      <a href="../index.php" class="nav-link active"><h5>Home</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./menu.php" class="nav-link"><h5>Menu</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./location.php" class="nav-link"><h5>Location</h5></a>
+                    </li>
+                  </ul>
 
-                    <!--   Show this only lg screens and up   -->
-                    <a class="navbar-brand d-none d-lg-block " href="https://john4e656f.github.io/Amaterasu/">
-                      <img src="https://github.com/John4E656F/Amaterasu/blob/main/assets/logo-lg-white.png?raw=true" alt="Oishii ramen shop" width="200px" height="200px">
-                    </a>
-          
-                <ul class="navbar-nav ps-5 ps-lg-0">
-                  <li class="nav-item">
-                      <a href="https://john4e656f.github.io/restaurant-css-framework/pages/gallery.html" class="nav-link"><h5>Gallery</h5></a>
+                      <!--   Show this only lg screens and up   -->
+                  <a class="navbar-brand d-none d-lg-block " href="../index.php">
+                    <img src="../assets/logo-lg-white.png" alt="Oishii ramen shop" width="200px" height="200px">
+                  </a>
+            
+                  <ul class="navbar-nav ps-5 ps-lg-0">
+                    <li class="nav-item">
+                        <a href="./gallery.php" class="nav-link"><h5>Gallery</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./about.php" class="nav-link"><h5>About Us</h5></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.php" class="nav-link"><h5>Contact Us</h5></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./eview.php" class="nav-link"><h5>Review</h5></a>
                   </li>
-                  <li class="nav-item">
-                      <a href="https://john4e656f.github.io/restaurant-css-framework/pages/about.html" class="nav-link"><h5>About Us</h5></a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="https://john4e656f.github.io/restaurant-css-framework/pages/contact.html" class="nav-link"><h5>Contact Us</h5></a>
-                  </li>
-                </ul>
-            </div>
+                  </ul>
+              </div>
         </div>
       </nav>
       

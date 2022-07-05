@@ -1,3 +1,6 @@
+<?php
+     include_once 'includes/dbh.php';
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -21,7 +24,7 @@
           <div class="container">
             
              <!--  Show this only on mobile to medium screens  -->
-             <a href="https://john4e656f.github.io/Amaterasu/" class="navbar-brand  d-lg-none justify-content-center">
+             <a href="./index.php" class="navbar-brand  d-lg-none justify-content-center">
               <img src="./assets/logo-lg-white.png" alt="Oishii ramen shop" width="200px" height="200px">
             </a>
               
@@ -33,31 +36,34 @@
             <div class="collapse navbar-collapse justify-content-center" id="navmenu">
                 <ul class="navbar-nav p-lg-5 ps-5">
                     <li class="nav-item">
-                      <a href="https://john4e656f.github.io/restaurant-css-framework/" class="nav-link active"><h5>Home</h5></a>
+                      <a href="./index.php" class="nav-link active"><h5>Home</h5></a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://john4e656f.github.io/restaurant-css-framework/pages/menu.html" class="nav-link"><h5>Menu</h5></a>
+                        <a href="./pages/menu.php" class="nav-link"><h5>Menu</h5></a>
                     </li>
                     <li class="nav-item">
-                      <a href="https://john4e656f.github.io/restaurant-css-framework/pages/location.html" class="nav-link"><h5>Location</h5></a>
+                      <a href="./pages/location.php" class="nav-link"><h5>Location</h5></a>
                     </li>
                   </ul>
 
                       <!--   Show this only lg screens and up   -->
-                  <a class="navbar-brand d-none d-lg-block " href="https://john4e656f.github.io/Amaterasu/">
+                  <a class="navbar-brand d-none d-lg-block " href="./index.php">
                     <img src="./assets/logo-lg-white.png" alt="Oishii ramen shop" width="200px" height="200px">
                   </a>
             
                   <ul class="navbar-nav ps-5 ps-lg-0">
                     <li class="nav-item">
-                        <a href="https://john4e656f.github.io/restaurant-css-framework/pages/gallery.html" class="nav-link"><h5>Gallery</h5></a>
+                        <a href="./pages/gallery.php" class="nav-link"><h5>Gallery</h5></a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://john4e656f.github.io/restaurant-css-framework/pages/about.html" class="nav-link"><h5>About Us</h5></a>
+                        <a href="./pages/about.php" class="nav-link"><h5>About Us</h5></a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://john4e656f.github.io/restaurant-css-framework/pages/contact.html" class="nav-link"><h5>Contact Us</h5></a>
+                        <a href="./pages/contact.php" class="nav-link"><h5>Contact Us</h5></a>
                     </li>
+                    <li class="nav-item">
+                      <a href="./pages/review.php" class="nav-link"><h5>Review</h5></a>
+                  </li>
                   </ul>
               </div>
         </div>
