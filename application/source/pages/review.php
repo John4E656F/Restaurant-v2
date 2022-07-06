@@ -13,8 +13,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
     <link href="/style.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
-		<link href="reviews.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+		<link href="../css/reviews.css" rel="stylesheet" type="text/css">
 
   </head>
   <body>
@@ -71,23 +71,15 @@
       
       <!-- @note Review -->
       <section>
-        <form method="post" action="../includes/review.inc.php">
-          <label for="name">Name
-            <input type="text" placeholder="Name" name="name">
-          </label>
-          <br>
-          <label for="email">Email
-            <input type="text" placeholder="Your Email" name="email" >
-          </label>
-          <br>
-            <textarea type="text" name="comment">Enter text area...</textarea>
-          <br>
-          <label for="image">Submit Image
-            <input type="file" name="image" >
-          </label>
-          <br>
-            <input type="submit" name="submit" value="Submit">
-          <br>
+      <nav class="navtop">
+	    	<div>
+	    		<h1>Reviews System</h1>
+	    	</div>
+	    </nav>
+      <div class="content home">
+        <h2>Reviews</h2>
+        <p>Check out the below reviews for our website.</p>
+      </div>
           <div class="reviews"></div>
             <script>
               const reviews_page_id = 1;
@@ -96,12 +88,12 @@
                 document.querySelector(".reviews").innerHTML = data;
                 document.querySelector(".reviews .write_review_btn").onclick = event => {
                   event.preventDefault();
-                  document.querySelector(".reviews .write_review_btn").style.display = 'block';
-                  document.querySelector(".reviews .write_review_btn input[name'name]").focus();
+                  document.querySelector(".reviews .write_review").style.display = 'block';
+                  document.querySelector(".reviews .write_review input[name='name]").focus();
                 };
                 document.querySelector(".reviews .write_review form").onsubmit = event => {
                   event.preventDefault();
-                  fetch("../includes/review.inc.php?page_id=" + reviews_pages_id, {
+                  fetch("../includes/review.inc.php?page_id=" + reviews_page_id, {
                     method: 'POST',
                     body: new FormData(document.querySelector(".reviews .write_review form"))
                   }).then(response => response.text()).then(data => {

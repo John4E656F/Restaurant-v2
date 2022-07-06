@@ -1,7 +1,7 @@
 <?php
     include_once 'dbh.php';
 
-    $sql = "SELECT * FROM review;";
+    $sql = "SELECT * FROM reviews;";
         $result = $pdo->query($sql);
 
         foreach ($pdo->query($sql) as $row) {
